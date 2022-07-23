@@ -1,0 +1,14 @@
+- version de typescrypt -> tsc --version
+- modo observador -> tsc -w
+- para transpilar -> tsc nombre del fichero desde el directorio que toca
+- se puede debuggear utilizando el archivo de tsconfig -> la idea es descomentar la linea de SourceMap y a partir de ahora se creara un nuevo fichero map que mapea los js a los ts.
+- se pueden eliminar los comentarios a la hora de transpilar a js -> descomentar removeComments.
+- se pueden incluir y excluir carpetas de la transpilacion -> se hace en tsconfig añadiendo un array fuera del primer objero que sea:
+    "exclude": [
+        "objetos/*.ts"
+    ],
+    "include": [
+        "node_modules"
+    ]//intentar no transpilar node modules por si acaso, pero en este caso es un ejemplo. ademas el include es lo unico que se va a transpilar...
+
+- Para cambiar los archivos de salida resultantes de la transpilación -> se puede resumir todo el código de typescrypt en un solo archivo js con outFile en tsconfig
