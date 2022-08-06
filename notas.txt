@@ -1,3 +1,4 @@
+- para instalar typescrypt -> npm install -g typescrypt
 - version de typescrypt -> tsc --version
 - modo observador -> tsc -w
 - para transpilar -> tsc nombre del fichero desde el directorio que toca
@@ -12,3 +13,7 @@
     ]//intentar no transpilar node modules por si acaso, pero en este caso es un ejemplo. ademas el include es lo unico que se va a transpilar...
 
 - Para cambiar los archivos de salida resultantes de la transpilación -> se puede resumir todo el código de typescrypt en un solo archivo js con outFile en tsconfig
+- npm install axios -> instalar un paquete que permite hacer peticiones http
+- con un fichero index dentro de una carpeta se puede hacer un export de todas las interfaces o clases de esa misma carpeta, de forma que mas tarde no es necesario ir importando todos los paquetes desde donde se necesiten, sino que se puede llamar en una sola linea a todos los recursos necesarios
+- quicktype.io -> pagina que permite tipar un json que le pases con datos y devuelve la estructura de este con tipos
+- existe una extension de vscode para quicktype.
