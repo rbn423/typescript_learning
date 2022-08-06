@@ -17,3 +17,4 @@
 - con un fichero index dentro de una carpeta se puede hacer un export de todas las interfaces o clases de esa misma carpeta, de forma que mas tarde no es necesario ir importando todos los paquetes desde donde se necesiten, sino que se puede llamar en una sola linea a todos los recursos necesarios
 - quicktype.io -> pagina que permite tipar un json que le pases con datos y devuelve la estructura de este con tipos
 - existe una extension de vscode para quicktype.
+- en algunos casos algunos paquetes de node no son compatibles con typescrypt, por lo que se soluciona creando un directorio (ej. dist) y en el fichero de tsconfig que se genera al lanzar tsc --init poner que el outdir apuntando ahi. Una vez hecho eso se intentar importar la biblioteca con el comando tipio de import ... from ... y en el mensaje que te da de error hay que ejecutar lo que te recomienda (ej npm i --save-dev @types/express) y solucionado.
